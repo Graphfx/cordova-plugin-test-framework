@@ -139,7 +139,7 @@ See: [`cordova-plugin-device` tests](https://github.com/apache/cordova-plugin-de
   * A: No.  The end-user should decide if they want to install the test framework, not your plugin (most users won't).
 
 * Q: What do I do if my plugin tests must have very large assets?
-  * A: Don't bundle those assets with your plugin.  If you can, have your tests fail gracefully if those assets don't don't exist (perhaps log a warning, perhaps fail a single asset-checking test, and skip the rest).  Then, ideally download those assets automatically into local storage the first time tests run.  Or create a manual test step to download and install assets.  As a final alternative, split those test assets into a separate plugin, and instruct users to install that plugin to run your full test suite.
+  * A: Don't bundle those assets with your plugin.  If you can, have your tests fail gracefully if those assets don't exist (perhaps log a warning, perhaps fail a single asset-checking test, and skip the rest).  Then, ideally download those assets automatically into local storage the first time tests run.  Or create a manual test step to download and install assets.  As a final alternative, split those test assets into a separate plugin, and instruct users to install that plugin to run your full test suite.
 
 * Q: Should I ship my app with the test framework plugin installed?
   * A: Not likely.  If you want, you can.  Then your app could even embed a link to the test page (`cdvtests/index.html`) from a help section of your app, to give end users a way to run your test suite out in the feild.  That may help diagnose causes of issues within your app.  Maybe.
